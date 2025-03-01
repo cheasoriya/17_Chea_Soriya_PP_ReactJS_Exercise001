@@ -24,7 +24,7 @@ export default function InputedComponent() {
   return (
     <>
       <section className="flex flex-col mx-10">
-        <h1 className="text-purple-500 text-3xl">React JS</h1>
+        <h1 className="text-purple-500 text-3xl font-bold">React JS</h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-5">
           <div className="flex flex-row-wrap justify-between gap-5">
             <div className="flex flex-col w-full">
@@ -52,7 +52,7 @@ export default function InputedComponent() {
           </div>
           <div className="flex flex-row-wrap justify-between gap-5">
             <div className="flex flex-col w-full">
-              <label>Book Title</label>
+              <label>Published Date</label>
               <div className="relative">
                 <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                   <svg
@@ -69,7 +69,7 @@ export default function InputedComponent() {
                   datepicker
                   id="default-datepicker"
                   name="datepick"
-                  type="text"
+                  type="date"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Select date"
                   onChange={handleInputChange}
@@ -77,23 +77,23 @@ export default function InputedComponent() {
               </div>
             </div>
             <div className="flex flex-col w-full">
-              <label>Book Title</label>
+              <label>Edition</label>
               <input
                 type="number"
                 name="edition"
                 className="bg-gray-300 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Atomic"
+                placeholder="Edition"
                 onChange={handleInputChange}
                 required
               />
             </div>
             <div className="flex flex-col  w-full">
-              <label>Author</label>
+              <label>Quantity</label>
               <input
                 type="number"
                 name="quantity"
                 className="bg-gray-300 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="John Doe"
+                placeholder="1"
                 onChange={handleInputChange}
                 required
               />

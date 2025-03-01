@@ -12,9 +12,9 @@ export default function CardsComponent({ students }) {
     <>
       <section className="grid grid-cols-3 w-full gap-5">
         {stuList?.map((student) => (
-          <div className="border rounded">
+          <div className="border border-purple-600 rounded">
             <div className="flex justify-end text-end ">
-              <p className="bg-blue-500 rounded-l-lg p-2">
+              <p className="text-white bg-blue-500 rounded-l-lg p-2">
                 {student?.datepick}
               </p>
             </div>
